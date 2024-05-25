@@ -10,10 +10,10 @@
 
     <TextView
         android:id="@+id/welcomeTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="343dp"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="236dp"
         android:fontFamily="sans-serif-black"
         android:text="Welcome To PocketPal"
         android:textColor="#30067C"
@@ -29,8 +29,33 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="416dp"
         android:text="Start"
-        android:textColor="#D6D3D3"
-        android:textColorLink="#FFFFFF"
+        android:textColor="#30067C"
+        android:textColorLink="#30067C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="324dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="95dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="17dp"
+        android:text="Name: "
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTxt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
