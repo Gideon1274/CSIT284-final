@@ -1,6 +1,8 @@
 package com.example.pocketpal;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +11,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class add_expense extends AppCompatActivity {
-
+    TextView textViewUsername;
+    String username;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +23,10 @@ public class add_expense extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Intent intent = getIntent();
+        username = intent.getStringExtra("username");
+        textViewUsername = findViewById(R.id.textusername);
+        textViewUsername.setText("Username: " + username);
+
     }
 }
