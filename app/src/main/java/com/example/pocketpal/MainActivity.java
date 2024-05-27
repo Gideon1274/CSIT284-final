@@ -15,6 +15,7 @@
     import androidx.core.view.WindowInsetsCompat;
 
     public class MainActivity extends AppCompatActivity {
+
         Button start;
         EditText username;
 
@@ -43,5 +44,8 @@
                     }
                 }
             });
+
+
+
         }
     }

@@ -12,12 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 public class homepage extends AppCompatActivity {
     Button transaction;
     ImageButton btnsavings;
     String username;
     TextView textViewUsername;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,8 @@ public class homepage extends AppCompatActivity {
         transaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(homepage.this,add_expense.class);
+                Intent intent = new Intent(homepage.this,splash.class);
+                intent.putExtra("username", textViewUsername.getText().toString());
                 startActivity(intent);
             }
         });
@@ -51,5 +52,4 @@ public class homepage extends AppCompatActivity {
             }
         });
     }
-
 }
