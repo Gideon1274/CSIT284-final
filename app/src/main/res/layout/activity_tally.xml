@@ -53,7 +53,7 @@
                 <TextView
                     android:id="@+id/textusername"
                     android:layout_width="wrap_content"
-                    android:layout_height="29dp"
+                    android:layout_height="30dp"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:text="Username: "
@@ -233,11 +233,11 @@
                 android:text="Transaction" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btnExpenses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="Expenses" />
 
             <Button
                 android:id="@+id/tallyBtn"
