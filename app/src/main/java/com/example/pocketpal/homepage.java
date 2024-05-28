@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -17,6 +16,7 @@ public class homepage extends AppCompatActivity {
     ImageButton btnsavings;
     String username;
     TextView textViewUsername;
+    Button Tally;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,14 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(homepage.this,Savings.class);
+                startActivity(intent);
+            }
+        });
+        Tally = findViewById(R.id.tallyBtn);
+        Tally.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(homepage.this,Tally.class);
                 startActivity(intent);
             }
         });
