@@ -9,5 +9,7 @@
     <color name="colorButton">#6200EE</color>
     <color name="colorButtonText">#FFFFFF</color>
     <color name="Common">#E91E63</color>
+    <color name="LightBlue">#CCFFFF</color>
+    <color name="LightPink">#FFB6C1</color>
 
 </resources>
