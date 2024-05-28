@@ -27,7 +27,7 @@ public class Tally extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        EditText searchEditText = findViewById(R.id.editTextText);
+        EditText searchEditText = findViewById(R.id.searchText);
         ImageButton menuButton = findViewById(R.id.menuButton);
 
         menuButton.setOnClickListener(new View.OnClickListener() {
