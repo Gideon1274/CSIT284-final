@@ -1,6 +1,7 @@
 package com.example.pocketpal;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +22,7 @@ public class Savings extends AppCompatActivity {
     private EditText savingsMoney;
     private EditText savingsDate;
     private TextView savingsResult;
-    private Button savingsCalculate;
+    private Button savingsCalculate, btnTips;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,15 @@ public class Savings extends AppCompatActivity {
                 }
             }
         });
+        btnTips= findViewById(R.id.btnTips);
+        btnTips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Savings.this,Tips.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private boolean validateInput() {

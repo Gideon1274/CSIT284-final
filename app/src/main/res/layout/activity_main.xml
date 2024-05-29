@@ -29,7 +29,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="416dp"
         android:text="Start"
-        android:textColor="#30067C"
+        android:textColor="#FFFFFF"
         android:textColorLink="#30067C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,6 +55,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="17dp"
         android:text="Name: "
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeTxt" />

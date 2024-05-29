@@ -17,6 +17,7 @@ public class homepage extends AppCompatActivity {
     ImageButton btnsavings;
     String username;
     TextView textViewUsername;
+    Button Tally;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +38,8 @@ public class homepage extends AppCompatActivity {
         transaction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(homepage.this,splash.class);
-                intent.putExtra("username", textViewUsername.getText().toString());
+                Intent intent = new Intent(homepage.this,display.class);
+//                intent.putExtra("username", textViewUsername.getText().toString());
                 startActivity(intent);
             }
         });
@@ -48,6 +49,14 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(homepage.this,Savings.class);
+                startActivity(intent);
+            }
+        });
+        Tally = findViewById(R.id.tallyBtn);
+        Tally.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(homepage.this,Tally.class);
                 startActivity(intent);
             }
         });

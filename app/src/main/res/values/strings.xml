@@ -1,10 +1,39 @@
 <resources>
-    <string name="app_name">pocketpal</string>
+    <string name="app_name">PocketPal</string>
 
     <string-array name="category_array">
         <item>Category 1</item>
         <item>Category 2</item>
         <item>Category 3</item>
     </string-array>
-
+    <string name="photo_btn_add">Add Photo</string>
+    <string name="photo_btn_change">Change Photo</string>
+    <string name="hint_item_name">Money Name</string>
+    <string name="category_price">Money: </string>
+    <string name="category_quantity">Quantity :</string>
+    <string name="category_description">Description</string>
+    <string name="hint_description">Description</string>
+    <string name="supplier_contact_heading">Contact: </string>
+    <string name="category_supplier_phone">Phone:</string>
+    <string name="hint_supplier_phone">0123456789</string>
+    <string name="hint_supplier_email">mail@email.com</string>
+    <string name="category_supplier_email">Email:</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete_item">Delete Item</string>
+    <string name="prefix_stock">Available:</string>
+    <string name="prefix_price">Money: P</string>
+    <string name="sale_btn">Sale</string>
+    <string name="empty_text">Click + button to add list</string>
+    <string name="delete_item_msg">Delete this?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard_dialog_msg">Discard changes and exit?</string>
+    <string name="discard_change">Discard change</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="delete_all">Delete all items</string>
+    <string name="delete_all_item">Delete all items?</string>
+    <string name="contact_supplier_msg">Contact Supplier By:</string>
+    <string name="supplier_contact_call">Call</string>
+    <string name="supplier_contact_email">Email</string>
+    <string name="no_supplier_contact_msg">Contact info is not provided</string>
 </resources>
